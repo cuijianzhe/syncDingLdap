@@ -5,8 +5,8 @@ DING_URL = "https://oapi.dingtalk.com"
 class dingUserSync:
 
     def __init__(self):
-        self.__DING_USER = 'ding10c6dd0d17f230c535c2f4657eb6378f'
-        self.__DING_SECRET = '5qeXi5u0uq9yY1ZKwbn9eIrz7aOc8Nwdw_v4X2qWuhfnwzXNcTJQAP5gaU5DkX4L'
+        self.__DING_USER = 'dinguser'
+        self.__DING_SECRET = 'dingsecret'
         self.headers = {'Content-Type': 'application/json;charset=utf-8'}
         self.token = ''
     def get_token(self):
