@@ -1,0 +1,15 @@
+dn: uid=yanxinyue,ou=manager,dc=limikeji,dc=com
+objectClass: top
+objectClass: inetOrgPerson
+objectClass: posixAccount
+givenName: 闫新月
+mail: yanxinyue@limikeji.com
+uid: yanxinyue
+displayName: 闫新月
+userPassword: {SSHA}F1Xw60ztW8f5FYQwLBDPpJTt6MRNZxCY
+description: 闫新月
+gidNumber: 1007
+uidNumber: 388571479922
+homeDirectory: /home/yanxinyue
+sn: 闫新月
+cn: 闫新月
