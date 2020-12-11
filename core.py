@@ -17,7 +17,7 @@ class get_info(dingUserSync):
         self.token = dingUserSync().get_token()
     def getSyncInfo(self):
         url = DING_URL + '/user/get?'
-        for depart in self.depart_dict:  #获取全部部门的id
+        for depart,departid in self.depart_dict:  #获取全部部门的id
             '''
             组名称: pinyin_transfer(depart)
             组内所有人员： departuser.get_depart_user(depart_dict[depart]) 
@@ -27,7 +27,7 @@ class get_info(dingUserSync):
             '''
             print('##### 当前同步的是{} #####'.format(pinyin_transfer(depart)))
             # print(self.departuser.get_depart_user(self.depart_dict[depart]))
-            for user in self.departuser.get_depart_user(self.depart_dict[depart]):
+            for user in self.departuser.get_depart_user(departid):
                 '''
                 可取两个值：{'name':'崔建哲','userid':'598941324'}
                 '''
